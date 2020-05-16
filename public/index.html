@@ -39,5 +39,27 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-database.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAk-V348pGH2XrKOrNI2FN_hC5HAEZcKKU",
+        authDomain: "armpittsburgh-bc2e8.firebaseapp.com",
+        databaseURL: "https://armpittsburgh-bc2e8.firebaseio.com",
+        projectId: "armpittsburgh-bc2e8",
+        storageBucket: "armpittsburgh-bc2e8.appspot.com",
+        messagingSenderId: "493818189814",
+        appId: "1:493818189814:web:be25af4e7f2d0134d5d9d7"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      console.log(firebase.app().name);
+      firebase.database().ref("/reservations").once("value", e => console.log(e.val()));
+    </script>
   </body>
 </html>
