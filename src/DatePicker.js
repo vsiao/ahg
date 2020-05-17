@@ -3,13 +3,13 @@ import React from 'react';
 function DatePicker() {
   return (
     <div className="DatePicker">
-      <label>
+      <label className="DatePicker-label">
         Check-in
-        <input type="date" name="checkin" />
+        <input className="DatePicker-dateInput" type="date" name="checkin" />
       </label>
-      <label>
+      <label className="DatePicker-label">
         Check-out
-        <input type="date" name="checkout" />
+        <input className="DatePicker-dateInput" type="date" name="checkout" />
       </label>
       <div className="DatePicker-dropdown">
 
