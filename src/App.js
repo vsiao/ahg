@@ -6,10 +6,18 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Armpittsburgh Hotel Group</h1>
+        <span className="App-ahgLogo">AHG</span>
+        <span className="App-ahgName">Armpittsburgh Hotel Group</span>
       </header>
-      <h2>Experience the House of Lars</h2>
-      <DatePicker />
+      <div className="App-main">
+        <img className="App-heroImg" src="/house-of-bars.jpg" />
+        <div className="App-page">
+          <div className="App-contents">
+            <h1 className="App-title">Experience the House of Lars</h1>
+            <DatePicker />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
